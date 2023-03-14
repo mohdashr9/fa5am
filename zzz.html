@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fa5amstore ar</title>
+    <link rel="stylesheet" type="text/css" href="zzz.css">
+
+</head>
+<body>
+    <div class="top-side">
+
+        <div class="wrapper">
+        <div class="blue-box">
+          <p id="my-link">   </p>
+          <p class="ff" > متجر فخم </p>
+    
+        </div>
+        <script>
+          var link = document.getElementById('my-link');
+          link.addEventListener('click', function() {
+            window.location.href = 'https://www.instagram.com/fa5amstore/';
+          });
+        </script>
+        
+        <nav>
+          <ul>
+            <li><a href="#section1"> المنتجات</a></li>
+            <li><a href="#section2"> التواصل</a></li>
+            <li><a href="#section3">الحسابات</a></li> </ul> </nav> <label for="lang-select">اختار لغة</label>
+    <select id="lang-select" name="lang-select">
+      <option value="ar">عربي</option>
+      <option value="en">انجليزي</option>
+      <option value="nl">هولندي</option>
+    </select>
+    <script>
+    // تعيين متغير لعنصر القائمة المنسدلة
+    var langSelect = document.getElementById("lang-select");
+    
+    // عند تغيير القيمة المحددة، قم بتحديث صفحة الويب وتمرير اللغة المحددة كمعلمة URL
+    langSelect.onchange = function() {
+      window.location.href = window.location.pathname + "?lang=" + this.value;
+    }
+    var langSelect = document.getElementById("lang-select");
+    
+    langSelect.onchange = function() {
+      var selectedLang = this.value;
+      var redirectUrl;
+      
+      // افحص القيمة المحددة وحدد الصفحة الويب التي يجب توجيه المستخدم إليها
+      switch (selectedLang) {
+        case "ar":
+          redirectUrl = "zzz.html";
+          break;
+        case "en":
+          redirectUrl = "index.html";
+          break;
+        case "nl":
+          redirectUrl = "http://example.com/nl";
+          break;
+        default:
+          redirectUrl = "http://example.com";
+      }
+      
+      // توجيه المستخدم إلى الصفحة الجديدة
+      window.location.href = redirectUrl;
+    }
+    
+    </script>
+    
+         
+        
+       
+    
+        
+        
+        
+        
+        
+          
+        <script src="ar.js"></script>
+        <style>
+            .in {
+              transition: transform 0.5s ease;
+              border-radius: 50%;
+        width: 200px;
+        text-align: center;
+            }
+            
+            .in:hover {
+              transform: scale(2.1);
+            }
+          </style>
+        <link rel="stylesheet" type="text/css" href="mm.css">
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>فخم</title>
+        <link rel="icon" href="instagram_profile_image.png" type="image/x-icon">
+    </head>
+    <body>
+     
+      <script>
+        var links = document.querySelectorAll('nav a');
+      
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function(e) {
+            e.preventDefault();
+            var sectionId = this.getAttribute('href');
+            document.querySelector(sectionId).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        }
+      </script>
+      
+        
+        <br>
+        <br>
+        <br>
+        <center>
+            <img class="in" src="iii.png" alt=""></center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+            <img class="arr" src="expand_more_FILL0_wght400_GRAD0_opsz48.png" <a href="section1" ></center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="section1">
+            <center>
+        <div class="card">
+            <div class="content">
+              <div class="title"> ملابس كورية</div>
+              <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div style="margin-bottom: 1.25rem;">
+                    <p class="ww">وين التوصيل؟</p>
+                    <select id="item-options"><option value="saudia" price="32">saudia - 32 EUR</option><option value="netherlands" price="29">netherlands - 29 EUR</option></select>
+                    <select style="visibility: hidden" id="quantitySelect"></select>
+                  </div>
+                <div id="paypal-button-container"></div>
+                </div>
+              </div>
+              <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+              <script>
+                function initPayPalButton() {
+                  var shipping = 29;
+                  var itemOptions = document.querySelector("#smart-button-container #item-options");
+              var quantity = parseInt();
+              var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+              if (!isNaN(quantity)) {
+                quantitySelect.style.visibility = "visible";
+              }
+              var orderDescription = 'وين التوصيل';
+              if(orderDescription === '') {
+                orderDescription = 'Item';
+              }
+              paypal.Buttons({
+                style: {
+                  shape: 'pill',
+                  color: 'black',
+                  layout: 'horizontal',
+                  label: 'paypal',
+                  
+                },
+                createOrder: function(data, actions) {
+                  var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+                  var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+                  var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+                  if(quantitySelect.options.length > 0) {
+                    quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+                  } else {
+                    quantity = 1;
+                  }
+          
+                  tax *= quantity;
+                  tax = Math.round(tax * 100) / 100;
+                  var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+                  priceTotal = Math.round(priceTotal * 100) / 100;
+                  var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+          
+                  return actions.order.create({
+                    purchase_units: [{
+                      description: orderDescription,
+                      amount: {
+                        currency_code: 'EUR',
+                        value: priceTotal,
+                        breakdown: {
+                          item_total: {
+                            currency_code: 'EUR',
+                            value: itemTotalValue,
+                          },
+                          shipping: {
+                            currency_code: 'EUR',
+                            value: shipping,
+                          },
+                          tax_total: {
+                            currency_code: 'EUR',
+                            value: tax,
+                          }
+                        }
+                      },
+                      items: [{
+                        name: selectedItemDescription,
+                        unit_amount: {
+                          currency_code: 'EUR',
+                          value: selectedItemPrice,
+                        },
+                        quantity: quantity
+                      }]
+                    }]
+                  });
+                },
+                onApprove: function(data, actions) {
+                  return actions.order.capture().then(function(orderData) {
+                    
+                    // Full available details
+                    console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+          
+                    // Show a success message within this page, e.g.
+                    const element = document.getElementById('paypal-button-container');
+                    element.innerHTML = '';
+                    element.innerHTML = '<h3>شكرا على الدفع❤</h3>';
+          
+                    // Or go to another URL:  actions.redirect('thank_you.html');
+          
+                  });
+                },
+                onError: function(err) {
+                  console.log(err);
+                },
+              }).render('#paypal-button-container');
+            }
+            initPayPalButton();
+              </script>
+              <img  class="wiit" src="witclo.jpeg">
+            
+            
+            </div>
+            </div>
+            <div class="card4">
+              <iframe src="https://mohdashr9.github.io/Mohammadi/"></iframe>
+              <div class="card4-content">
+                <h3>برمجة مواقع</h3>
+                <p>رح اسويلك موقع كامل ب استضافة مجانية ب 5 يورو؟ </p>
+                <a href="https://mohdashr9.github.io/Mohammadi/" class="ll" target="_blank">رابط الموقع </a>
+                <h3 class="ppp">بدك تدفع؟ارسل انستا </h3>
+                
+              </div>
+    
+            </div>
+            
+            
+            </section>
+            
+            <section id="section2">
+              <div class="contact-form">
+                <span class="heading">التواصل</span>
+                <form  action="https://formsubmit.co/124188e97a6d773634a846b35fd379b0" method="POST" >
+                  <label for="name">الاسم:</label>
+                  <input type="text" required="">
+                  <label for="email">الايميل:</label>
+                  <input type="email" id="email" name="email" required="">
+                  <label for="message">الرسالة:</label>
+                  <textarea id="message" name="message" required=""></textarea>
+                  <button type="submit">ارسال</button>
+                </form>
+              
+              <div class="down-side">
+           </div>
+            </div>
+            <section id="section3">
+    
+            <h1 class="account">الحساب</h1>
+            
+    <div class="card000"
+    <h1 class="oo">حساب انستا</h1>
+    
+      <a href="https://www.instagram.com/fa5amstore/">
+        <img class="iiii" src="iiiiiii.png" alt="Example Image">
+      </a>
+      </a>
+      
+    </div>
+    <center>
+    <div class="carde">
+      <div class="card2">
+        <p class="bb">الايميل</p>
+        <a href="https://mail.google.com/mail/u/0/?hl=nl#inbox/FMfcgzGslbGNPScnmnCBstcnDgjxkXPB?compose=CllgCJvkXbXPCqFlCCLCkRzMjMkslHktqWLJlffXckQxlfgbGsrdmxBklZgdVXLRlXmzTvKldPL">
+        <img class="ggg" src="Gmail.png"></a>
+      </div>
+    </div></center>
+    <div class="container">
+    
+      <div class="card__tiktok"
+      >
+    
+          <div class="sub__tiktok--one"
+          <img class="ttik" src="tiktok.jfif">
+    
+تيك توك
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+    
+          <div class="sub__tiktok--two">
+            <a class="tttik" href="https://www.tiktok.com/@fa5amstore">
+              <h2>@fa5amstore</h2></a>
+    
+          </div>
+      </div>
+      </div>
+    
+             </section>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+</body>
+</html>
